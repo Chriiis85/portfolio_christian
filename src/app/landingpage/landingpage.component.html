@@ -1,35 +1,148 @@
 <app-navbar></app-navbar>
-<section class="w-[80vw] bg-white p-5 py-20 mx-auto flex-col">
-<!--CONTENEDOR PRINCIPAL-->
+<section class="w-[80vw] bg-white p-5 py-20 mx-auto flex-col text-justify">
+  <!--CONTENEDOR PRINCIPAL-->
   <div class="p-5 flex flex-row items-center h-[25vh]">
     <div class="w-[60%] h-[20vh] p-10 flex flex-col items-start justify-center">
-      <h1 class="py-5 text-6xl font-bold capitalize">Hola, soy Christian.</h1>
-      <p class="text-2xl font-semibold">
+      <h1 class="py-5 text-5xl font-bold capitalize tracking-wide">
+        Hola, soy Christian.
+      </h1>
+      <p class="text-xl tracking-wide font-semibold">
         Técnico Superior en Desarrollo de Aplicaciones Web y Multiplataforma.
         Desarrollador, Maquetador y Diseñador Web y de Aplicaciones.
       </p>
     </div>
     <div class="w-[40%] h-[20vh] flex items-start justify-center">
       <img
-        class="rounded-full shadow-2xl size-50"
+        class="rounded-full border-2 border-black shadow-2xl size-44"
         src="https://media.licdn.com/dms/image/v2/D4D35AQGiLTYqYOQZKQ/profile-framedphoto-shrink_200_200/profile-framedphoto-shrink_200_200/0/1719444422572?e=1729512000&v=beta&t=6edYZZcuFVNbtIoLDDf5REl46cbufABWNaZ-OseUjzs"
         alt="Foto de Christian"
       />
     </div>
   </div>
-<!--CONTENEDOR ABOUT-->
-<div class="h-auto px-14 py-20 w-[70vw]">
-    <h2 class="text-2xl font-bold capitalize">Sobre mí</h2>
-    <p class="text-l py-5 text-justify">Desarrollador Web con un sólido historial de aprendizaje y una fuerte ambición de adquirir
-        nuevos conocimientos en el sector del desarrollo y maquetación de páginas web.
-        Experiencia en el diseño, desarrollo y mantenimiento de sitios web dinámicos y funcionales,
-        así como en la creación de interfaces de usuario atractivas y accesibles para todo tipo de
-        usuarios. En constante aprendizaje de nuevas herramientas y tecnologías en el ámbito de la
-        informática y el desarrollo de aplicaciones web, manteniéndome al día con las últimas
-        innovaciones. Comprometido con satisfacer las necesidades funcionales del usuario final y
-        dispuesto a realizar trabajos colaborativos. Poseo habilidades para resolver problemas de
-        manera eficiente y una actitud proactiva para enfrentar desafíos técnicos, asegurando
-        siempre la entrega de proyectos de alta calidad dentro de los plazos establecidos,
-        satisfaciendo y cumpliendo con las expectativas del usuario final.</p>
-</div>
+  <!--CONTENEDOR ABOUT-->
+  <div class="h-auto px-14 py-10 w-[70vw]">
+    <h2 class="text-2xl font-bold tracking-wide">Sobre mí</h2>
+    <p class="text-l py-5">
+      Desarrollador Web con un sólido historial de aprendizaje y una fuerte
+      ambición de adquirir nuevos conocimientos en el sector del desarrollo y
+      maquetación de páginas web. Experiencia en el diseño, desarrollo y
+      mantenimiento de sitios web dinámicos y funcionales, así como en la
+      creación de interfaces de usuario atractivas y accesibles para todo tipo
+      de usuarios. En constante aprendizaje de nuevas herramientas y tecnologías
+      en el ámbito de la informática y el desarrollo de aplicaciones web,
+      manteniéndome al día con las últimas innovaciones. Comprometido con
+      satisfacer las necesidades funcionales del usuario final y dispuesto a
+      realizar trabajos colaborativos. Poseo habilidades para resolver problemas
+      de manera eficiente y una actitud proactiva para enfrentar desafíos
+      técnicos, asegurando siempre la entrega de proyectos de alta calidad
+      dentro de los plazos establecidos, satisfaciendo y cumpliendo con las
+      expectativas del usuario final.
+    </p>
+  </div>
+
+  <div class="h-auto px-14 py-3 w-[70vw]">
+    <h2 class="text-2xl font-bold tracking-wide">Experiencia Laboral</h2>
+  </div>
+
+  <div class="h-auto px-14 py-3 w-[70vw]">
+    <h2 class="text-2xl font-bold tracking-wide">Estudios</h2>
+  </div>
+
+  <div class="h-auto px-14 py-3 w-[70vw]">
+    <h2 class="text-2xl font-bold tracking-wide">Skills</h2>
+    <div class="p-3 h-auto w-auto flex-row">
+        <app-skills-button
+        [icon]="'fa-brands fa-angular'"
+        [name]="'Angular'"
+        [color]="'rgb(224, 62, 49)'"
+      ></app-skills-button>
+      
+      <app-skills-button
+        [icon]="'fa-brands fa-html5'"
+        [name]="'HTML'"
+        [color]="'rgb(227, 76, 38)'"
+      ></app-skills-button>
+
+      <app-skills-button
+        [icon]="'fa-brands fa-css3-alt'"
+        [name]="'CSS'"
+        [color]="'rgb(38, 77, 228)'"
+      ></app-skills-button>
+
+      <app-skills-button
+        [icon]="'fa-brands fa-js'"
+        [name]="'JavaScript'"
+        [color]="'rgb(204, 163, 0)'"
+      ></app-skills-button>
+
+      <app-skills-button
+        [icon]="'fa-solid fa-code'"
+        [name]="'TypeScript'"
+        [color]="'black'"
+      ></app-skills-button>
+
+      <app-skills-button
+        [icon]="'fa-brands fa-js'"
+        [name]="'PHP'"
+        [color]="'rgb(79, 93, 149)'"
+      ></app-skills-button>
+
+      <app-skills-button
+        [icon]="'fa-brands fa-java'"
+        [name]="'Java'"
+        [color]="'rgb( 170, 64, 25)'"
+      ></app-skills-button>
+
+      <app-skills-button
+        [icon]="'fa-solid fa-database'"
+        [name]="'SQL/MYSQL'"
+        [color]="'black'"
+      ></app-skills-button>
+
+      <app-skills-button
+      [icon]="'fa-solid fa-database'"
+      [name]="'Firebase'"
+      [color]="'black'"
+    ></app-skills-button>
+
+      <app-skills-button
+        [icon]="'fa-brands fa-bootstrap'"
+        [name]="'Bootstrap'"
+        [color]="'rgb( 0, 123, 255)'"
+      ></app-skills-button>
+
+      <app-skills-button
+        [icon]="'fa-solid fa-code'"
+        [name]="'Tailwind'"
+        [color]="'black'"
+      ></app-skills-button>
+
+      <app-skills-button
+        [icon]="'fa-solid fa-code'"
+        [name]="'jQuery'"
+        [color]="'black'"
+      ></app-skills-button>
+
+      <app-skills-button
+      [icon]="'fa-brands fa-git'"
+      [name]="'Git'"
+      [color]="'rgb(240, 80, 50)'"
+    ></app-skills-button>
+
+    <app-skills-button
+    [icon]="'fa-brands fa-github'"
+    [name]="'Github'"
+    [color]="'rgb(24, 23, 23)'"
+  ></app-skills-button>
+
+  <app-skills-button
+  [icon]="'fa-brands fa-figma'"
+  [name]="'Figma'"
+  [color]="'rgb(242, 78, 30)'"
+></app-skills-button>
+
+
+
+    </div>
+  </div>
 </section>
