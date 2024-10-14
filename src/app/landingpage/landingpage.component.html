@@ -1,17 +1,19 @@
 <app-navbar></app-navbar>
-<section class="w-[80vw] bg-white p-5 py-20 mx-auto flex-col text-justify">
+<section class="w-[80vw] p-5 py-20 mx-auto text-justify">
   <!--CONTENEDOR PRINCIPAL-->
-  <div class="p-5 flex flex-row items-center h-[25vh]">
-    <div class="w-[60%] h-[20vh] p-10 flex flex-col items-start justify-center">
+  <div
+    class="p-5 flex flex-row items-center justify-center h-[25vh] text-start"
+  >
+    <div class="w-[50vw] h-auto p-10 flex flex-col items-start">
       <h1 class="py-5 text-5xl font-bold capitalize tracking-wide">
         Hola, soy Christian.
       </h1>
-      <p class="text-xl tracking-wide font-semibold">
+      <p class="text-2xl font-semibold text-start">
         Técnico Superior en Desarrollo de Aplicaciones Web y Multiplataforma.
         Desarrollador, Maquetador y Diseñador Web y de Aplicaciones.
       </p>
     </div>
-    <div class="w-[40%] h-[20vh] flex items-start justify-center">
+    <div class="w-[30vw] h-auto flex items-start justify-center">
       <img
         class="rounded-full border-2 border-black shadow-2xl size-44"
         src="https://media.licdn.com/dms/image/v2/D4D35AQGiLTYqYOQZKQ/profile-framedphoto-shrink_200_200/profile-framedphoto-shrink_200_200/0/1719444422572?e=1729512000&v=beta&t=6edYZZcuFVNbtIoLDDf5REl46cbufABWNaZ-OseUjzs"
@@ -20,9 +22,9 @@
     </div>
   </div>
   <!--CONTENEDOR ABOUT-->
-  <div class="h-auto px-14 py-10 w-[70vw]">
-    <h2 class="text-2xl font-bold tracking-wide">Sobre mí</h2>
-    <p class="text-l py-5">
+  <div class="h-auto px-14 py-10">
+    <h2 class="text-4xl font-bold">Sobre Mí</h2>
+    <p class="text-2xl py-5 opacity-90">
       Desarrollador Web con un sólido historial de aprendizaje y una fuerte
       ambición de adquirir nuevos conocimientos en el sector del desarrollo y
       maquetación de páginas web. Experiencia en el diseño, desarrollo y
@@ -40,23 +42,33 @@
     </p>
   </div>
 
-  <div class="h-auto px-14 py-3 w-[70vw]">
-    <h2 class="text-2xl font-bold tracking-wide">Experiencia Laboral</h2>
+  <!--CONTENEDOR EXPERIENCIA LABORAL-->
+  <div class="h-auto px-14 py-3">
+    <h2 class="text-4xl font-bold">Experiencia Laboral</h2>
   </div>
 
-  <div class="h-auto px-14 py-3 w-[70vw]">
-    <h2 class="text-2xl font-bold tracking-wide">Estudios</h2>
+  <!--CONTENEDOR ESTUDIOS-->
+  <div class="h-auto px-14 py-3">
+    <h2 class="text-4xl font-bold">Estudios</h2>
   </div>
 
-  <div class="h-auto px-14 py-3 w-[70vw]">
-    <h2 class="text-2xl font-bold tracking-wide">Skills</h2>
+  <!--CONTENEDOR CERTIFICADOS-->
+  <div class="h-auto px-14 py-3">
+    <h2 class="text-4xl font-bold py-10 text-center items-start justify-center">
+      Certificados
+    </h2>
+  </div>
+
+  <!--CONTENEDOR SKILLS-->
+  <div class="h-auto px-14 py-3 text-center items-start justify-center">
+    <h2 class="text-4xl font-bold tracking-wide py-10">Skills</h2>
     <div class="p-3 h-auto w-auto flex-row">
-        <app-skills-button
+      <app-skills-button
         [icon]="'fa-brands fa-angular'"
         [name]="'Angular'"
         [color]="'rgb(224, 62, 49)'"
       ></app-skills-button>
-      
+
       <app-skills-button
         [icon]="'fa-brands fa-html5'"
         [name]="'HTML'"
@@ -100,10 +112,10 @@
       ></app-skills-button>
 
       <app-skills-button
-      [icon]="'fa-solid fa-database'"
-      [name]="'Firebase'"
-      [color]="'black'"
-    ></app-skills-button>
+        [icon]="'fa-solid fa-database'"
+        [name]="'Firebase'"
+        [color]="'black'"
+      ></app-skills-button>
 
       <app-skills-button
         [icon]="'fa-brands fa-bootstrap'"
@@ -124,25 +136,59 @@
       ></app-skills-button>
 
       <app-skills-button
-      [icon]="'fa-brands fa-git'"
-      [name]="'Git'"
-      [color]="'rgb(240, 80, 50)'"
-    ></app-skills-button>
+        [icon]="'fa-brands fa-git'"
+        [name]="'Git'"
+        [color]="'rgb(240, 80, 50)'"
+      ></app-skills-button>
 
-    <app-skills-button
-    [icon]="'fa-brands fa-github'"
-    [name]="'Github'"
-    [color]="'rgb(24, 23, 23)'"
-  ></app-skills-button>
+      <app-skills-button
+        [icon]="'fa-brands fa-github'"
+        [name]="'Github'"
+        [color]="'rgb(24, 23, 23)'"
+      ></app-skills-button>
 
-  <app-skills-button
-  [icon]="'fa-brands fa-figma'"
-  [name]="'Figma'"
-  [color]="'rgb(242, 78, 30)'"
-></app-skills-button>
+      <app-skills-button
+        [icon]="'fa-brands fa-figma'"
+        [name]="'Figma'"
+        [color]="'rgb(242, 78, 30)'"
+      ></app-skills-button>
 
-
-
+      <app-skills-button
+        [icon]="'fa-brands fa-docker'"
+        [name]="'Docker'"
+        [color]="'rgb(0, 153, 255)'"
+      ></app-skills-button>
     </div>
+  </div>
+
+  <!--CONTENEDOR CERTIFICADOS-->
+  <div class="h-auto px-14 py-3 text-center items-start justify-center">
+    <h2 class="text-4xl font-bold tracking-wide py-10">Mis proyectos más relevantes</h2>
+  </div>
+
+  <!--CONTENEDOR RECURSOS-->
+  <div class="h-auto px-14 py-3 text-center items-start justify-center">
+    <h2 class="text-4xl font-bold tracking-wide py-10">Contáctame</h2>
+    <p class="text-2xl tracking-wide mx-20 opacity-90">
+      ¿Quieres hablar o contactar conmigo? Me puedes escribir a mi correo
+      <a
+        class="font-bold text-blue-500 hover:underline cursor-pointer transition delay-300"
+        href="mailto:christianmorenodiaz85@gmail.com"
+        >christianmorenodiaz85&#64;gmail.com</a
+      >
+      (preferiblemente) o bien puedes llamarme a mi numero de teléfono
+      <a
+        class="font-bold text-blue-500 hover:underline cursor-pointer transition delay-300"
+        href=""
+        >619 27 66 45</a
+      >. Puedes tambien contactarme a través de mi
+      <a
+        class="font-bold text-blue-500 hover:underline cursor-pointer transition delay-300"
+        target="_blank"
+        href="https://www.linkedin.com/in/christian-moreno-díaz-109024292/"
+        >LinkedIn</a
+      >
+      y hablar por la red social si lo prefieres.
+    </p>
   </div>
 </section>
