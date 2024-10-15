@@ -129,78 +129,18 @@
       Certificados
     </h2>
     <div class="flex flex-row items-center justify-around">
-      <div
-        class="p-3 cursor-pointer group relative flex flex-col my-6 bg-white shadow-sm border border-slate-200 rounded-lg w-96 hover:shadow-lg transition-shadow duration-300"
-      >
-        <div
-          class="border-2 border-black relative h-40 m-2.5 overflow-hidden text-white rounded-md"
-        >
-          <img
-            class="transition-transform duration-500 ease-[cubic-bezier(0.25, 1, 0.5, 1)] transform group-hover:scale-110"
-            src="https://udemy-certificate.s3.amazonaws.com/image/UC-497035ed-855d-47fd-b05b-0bbcab3fa7cd.jpg?v=1724787789000"
-            alt="investment-seed-round"
-          />
-        </div>
-        <div class="p-4">
-          <h6 class="mb-2 text-l font-semibold">
-            Git, GitHub & Markdown Crash Course: Learn Git, GitHub & MD
-          </h6>
-          <p class="text-slate-600 leading-normal text-sm font-light">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione
-            numquam quae facilis et aliquid magnam voluptate aliquam culpa,
-            laborum consectetur quisquam unde corrupti quo optio amet eius
-            voluptatum quibusdam eaque!
-          </p>
-        </div>
-        <div class="px-4 pb-4 pt-0 mt-2">
-          <button
-            class="rounded-md bg-slate-800 py-2 px-4 border border-transparent text-center text-sm text-white transition-all shadow-md hover:shadow-lg focus:bg-slate-700 focus:shadow-none active:bg-slate-700 hover:bg-slate-700 active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
-            type="button"
-          >
-            <a
-              target="_blank"
-              href="https://www.udemy.com/certificate/UC-497035ed-855d-47fd-b05b-0bbcab3fa7cd/?utm_campaign=email&utm_medium=email&utm_source=sendgrid.com"
-              >Ver Certificado</a
-            >
-          </button>
-        </div>
-      </div>
-      <div
-        class="p-3 cursor-pointer group relative flex flex-col my-6 bg-white shadow-sm border border-slate-200 rounded-lg w-96 hover:shadow-lg transition-shadow duration-300"
-      >
-        <div
-          class="border-2 border-black relative h-40 m-2.5 overflow-hidden text-white rounded-md"
-        >
-          <img
-            class="transition-transform duration-500 ease-[cubic-bezier(0.25, 1, 0.5, 1)] transform group-hover:scale-110"
-            src="https://udemy-certificate.s3.amazonaws.com/image/UC-c2f88cef-7d7f-4a92-801c-b15869b064ec.jpg?v=1725830728000"
-            alt="investment-seed-round"
-          />
-        </div>
-        <div class="p-4">
-          <h6 class="mb-2 text-l font-semibold">
-            Universidad Angular - De Cero a Experto - Angular 18
-          </h6>
-          <p class="text-slate-600 leading-normal text-sm font-light">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est
-            recusandae, assumenda atque quia consequatur, voluptate blanditiis
-            quae praesentium error quam veniam at eligendi ea architecto ipsa.
-            Exercitationem aliquid architecto eligendi.
-          </p>
-        </div>
-        <div class="px-4 pb-4 pt-0 mt-2">
-          <button
-            class="rounded-md bg-slate-800 py-2 px-4 border border-transparent text-center text-sm text-white transition-all shadow-md hover:shadow-lg focus:bg-slate-700 focus:shadow-none active:bg-slate-700 hover:bg-slate-700 active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
-            type="button"
-          >
-            <a
-              target="_blank"
-              href="https://www.udemy.com/certificate/UC-c2f88cef-7d7f-4a92-801c-b15869b064ec/"
-              >Ver Certificado</a
-            >
-          </button>
-        </div>
-      </div>
+      <app-certificado-card
+      [img]="'https://udemy-certificate.s3.amazonaws.com/image/UC-c2f88cef-7d7f-4a92-801c-b15869b064ec.jpg?v=1725830728000'"
+      [title]="'Universidad Angular - De Cero a Experto - Angular 18'"
+      [desc]="'Descripcion de prueba'"
+      [url]="'https://www.udemy.com/certificate/UC-c2f88cef-7d7f-4a92-801c-b15869b064ec/'"
+      ></app-certificado-card>
+      <app-certificado-card
+      [img]="'https://udemy-certificate.s3.amazonaws.com/image/UC-497035ed-855d-47fd-b05b-0bbcab3fa7cd.jpg?v=1724787789000'"
+      [title]="'Git, GitHub & Markdown Crash Course: Learn Git, GitHub & MD'"
+      [desc]="'Descripcion de prueba'"
+      [url]="'https://www.udemy.com/certificate/UC-497035ed-855d-47fd-b05b-0bbcab3fa7cd/?utm_campaign=email&utm_medium=email&utm_source=sendgrid.com'"
+      ></app-certificado-card>
     </div>
   </div>
 
