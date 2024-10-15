@@ -50,76 +50,33 @@
   <!--CONTENEDOR ESTUDIOS-->
   <div class="h-auto px-14 py-3">
     <h2 class="text-4xl font-bold">Estudios</h2>
-    <ul role="list" class="divide-y divide-gray-300">
-      <li class="flex justify-between gap-x-6 py-5">
-        <div class="flex min-w-0 gap-x-4">
-          <img
-            class="h-12 w-12 flex-none rounded-full bg-gray-50"
-            src="https://pbs.twimg.com/profile_images/1101916549009547264/8WvjMwp8_400x400.png"
-            alt=""
-          />
-          <div class="min-w-0 flex-auto">
-            <p class="text-sm font-semibold leading-6 text-gray-900">
-              Desarrollo de Aplicaciones Web
-            </p>
-            <p class="mt-1 truncate text-xs leading-5 text-gray-500">
-              I.E.S Puig Adam
-            </p>
-          </div>
-        </div>
-        <div class="hidden shrink-0 sm:flex sm:flex-col sm:items-end">
-          <p class="text-sm leading-6 text-gray-900">Sep 2023 - Jun 2024</p>
-          <p class="mt-1 text-xs leading-5 text-gray-500">
-            Ciclo Formativo Grado Superior
-          </p>
-        </div>
-      </li>
-      <li class="flex justify-between gap-x-6 py-5">
-        <div class="flex min-w-0 gap-x-4">
-          <img
-            class="h-12 w-12 flex-none rounded-full bg-gray-50"
-            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0lyU1mzOzfyC7BdOupW3o4tJAjEjIWCDvjw&s"
-            alt=""
-          />
-          <div class="min-w-0 flex-auto">
-            <p class="text-sm font-semibold leading-6 text-gray-900">
-              Desarrollo de Aplicaciones Multiplataforma
-            </p>
-            <p class="mt-1 truncate text-xs leading-5 text-gray-500">
-              Colegio La Inmaculada-Padres Escolapios
-            </p>
-          </div>
-        </div>
-        <div class="hidden shrink-0 sm:flex sm:flex-col sm:items-end">
-          <p class="text-sm leading-6 text-gray-900">Sep 2021 - Jun 2023</p>
-          <p class="mt-1 text-xs leading-5 text-gray-500">
-            Ciclo Formativo Grado Superior
-          </p>
-        </div>
-      </li>
-      <li class="flex justify-between gap-x-6 py-5">
-        <div class="flex min-w-0 gap-x-4">
-          <img
-            class="h-12 w-12 flex-none rounded-full bg-gray-50"
-            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_Xps2RwJdtzWhhMGbcYCKR0x80EA5iIYmzQ&s"
-            alt=""
-          />
-          <div class="min-w-0 flex-auto">
-            <p class="text-sm font-semibold leading-6 text-gray-900">
-              Sistemas Microinformáticos y Redes
-            </p>
-            <p class="mt-1 truncate text-xs leading-5 text-gray-500">
-              I.E.S Laguna de Joatzel
-            </p>
-          </div>
-        </div>
-        <div class="hidden shrink-0 sm:flex sm:flex-col sm:items-end">
-          <p class="text-sm leading-6 text-gray-900">Sep 2019 - Jun 2021</p>
-          <p class="mt-1 text-xs leading-5 text-gray-500">
-            Ciclo Formativo Grado Medio
-          </p>
-        </div>
-      </li>
+    <ul role="list">
+      <app-estudios-list
+      [logo]="'https://pbs.twimg.com/profile_images/1101916549009547264/8WvjMwp8_400x400.png'"
+      [title]="'Desarrollo de Aplicaciones Web'"
+      [center]="'I.E.S Puig Adam'"
+      [date]="'Sep 2023 - Jun 2024'"
+      [type]="'Ciclo Formativo Grado Superior'"
+      ></app-estudios-list>
+      <div class="border-t border-gray-300"></div>
+
+      <app-estudios-list
+      [logo]="'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0lyU1mzOzfyC7BdOupW3o4tJAjEjIWCDvjw&s'"
+      [title]="'Desarrollo de Aplicaciones Multiplataforma'"
+      [center]="'Colegio La Inmaculada-Padres Escolapios'"
+      [date]="'Sep 2021 - Jun 2023'"
+      [type]="'Ciclo Formativo Grado Superior'"
+      ></app-estudios-list>
+
+      <div class="border-t border-gray-300"></div>
+      <app-estudios-list
+      [logo]="'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_Xps2RwJdtzWhhMGbcYCKR0x80EA5iIYmzQ&s'"
+      [title]="'Sistemas Microinformáticos y Redes'"
+      [center]="'I.E.S Laguna de Joatzel'"
+      [date]="'Sep 2019 - Jun 2021'"
+      [type]="'Ciclo Formativo Grado Medio'"
+      ></app-estudios-list>
+
     </ul>
   </div>
 
@@ -279,3 +236,4 @@
     </p>
   </div>
 </section>
+
