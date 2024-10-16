@@ -1,12 +1,12 @@
 <div
-  class="accordion py-4 border-b border-solid hover:bg-gray-100 cursor-pointer"
+  class="accordion hover:bg-gray-100 cursor-pointer"
   id="basic-heading-three-with-arrow-always-open"
 >
   <button
-    class="accordion-toggle flex flex-row items-center justify-between leading-8 text-gray-600 w-full transition duration-500 hover:text-indigo-600 accordion-active:text-indigo-600"
+    class="accordion-toggle flex flex-row items-center justify-between leading-8 text-gray-600 w-full h-full transition duration-500 hover:text-indigo-600 accordion-active:text-indigo-600"
     aria-controls="basic-collapse-three-with-arrow-always-open"
   >
-    <div class="w-full flex flex-row items-center justify-between gap-x-4 px-4 sm:px-6 md:gap-x-8">
+    <div class="p-4 w-full flex flex-row items-center justify-between gap-x-4 px-4 sm:px-6 md:gap-x-8">
       <div class="flex items-center min-w-0 gap-x-4">
         <img
           class="h-12 w-12 flex-none rounded-full bg-gray-50"
@@ -14,7 +14,7 @@
           alt=""
         />
         <div class="min-w-0 flex-auto text-start">
-          <p class="text-lg sm:text-base flex items-center font-semibold leading-6 text-gray-900">
+          <p class="text-lg flex items-center font-semibold leading-6 text-gray-900">
             {{ title }}
             <svg
               class="ml-2 w-5 h-5 transition duration-500 group-hover:text-indigo-600 accordion-active:text-indigo-600 accordion-active:rotate-180"
@@ -31,16 +31,16 @@
               />
             </svg>
           </p>
-          <p class="mt-1 text-xs sm:text-sm leading-5 text-gray-500">
+          <p class="mt-1 text-l leading-5 text-gray-500">
             {{ area }}
           </p>
         </div>
       </div>
       <div class="hidden sm:flex sm:flex-col sm:items-end">
-        <p class="text-sm sm:text-base leading-6 text-gray-900">
+        <p class="text-lg leading-6 text-gray-900">
           {{ date }}
         </p>
-        <p class="text-xs sm:text-sm leading-6 text-gray-500">
+        <p class="text-l leading-6 text-gray-500">
           {{ location }}
         </p>
       </div>
@@ -49,16 +49,16 @@
 
   <div
     id="basic-collapse-three-with-arrow-always-open"
-    class="accordion-content w-full mt-3 sm:px-8 overflow-hidden text-justify"
+    class="accordion-content w-full sm:px-8 overflow-hidden text-justify"
     aria-labelledby="basic-heading-three-with-arrow-always-open"
   >
-    <p class="text-sm px-14 text-gray-500 ">
+    <p class="text-base px-14 text-gray-500 leading-6 mt-3 mb-2">
       {{ desc1 }}
     </p>
-    <p class="text-sm px-14 text-gray-500 leading-6">
+    <p class="text-base px-14 text-gray-500 leading-6 mb-2">
       {{ desc2 }}
     </p>
-    <p class="text-sm px-14 text-gray-500 leading-6">
+    <p class="text-base px-14 text-gray-500 leading-6 mb-5">
       {{ desc3 }}
     </p>
   </div>

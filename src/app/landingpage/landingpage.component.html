@@ -1,11 +1,11 @@
 <!--<app-navbar></app-navbar>-->
-<section class="w-[100vw] md:w-[80vw] lg:w-[70vw] xl:w-[60vw] p-2 mx-auto">
+<section class="w-[100vw] md:w-[80vw] lg:w-[70vw] xl:w-[60vw] p-10 mx-auto">
   <!-- CONTENEDOR PRINCIPAL -->
   <div
-    class="p-5 flex flex-col md:flex-row items-center justify-center h-auto md:h-[25vh] text-start"
+    class="flex flex-col md:flex-row items-center justify-center h-auto md:h-[25vh] text-start"
   >
     <div
-      class="w-full md:w-[80vw] h-auto p-5 md:p-10 flex flex-col items-start"
+      class="w-full md:w-[80vw] h-auto flex flex-col items-start"
     >
       <h1 class="py-5 text-3xl md:text-5xl font-bold capitalize tracking-wide">
         Hola, soy Christian.
@@ -27,7 +27,7 @@
   </div>
 
   <!-- CONTENEDOR ABOUT -->
-  <div class="h-auto px-5 md:px-14 py-5">
+  <div class="h-auto">
     <h2 class="text-3xl md:text-4xl font-bold">Sobre Mí</h2>
     <p class="text-base md:text-xl py-5 text-slate-600 text-justify">
       Desarrollador Web con un sólido historial de aprendizaje y una fuerte
@@ -48,7 +48,7 @@
   </div>
 
   <!--CONTENEDOR EXPERIENCIA LABORAL-->
-  <div class="h-auto px-14">
+  <div class="h-auto">
     <h2 class="text-4xl font-bold py-10">Experiencia Laboral</h2>
     <div class="accordion-group" data-accordion="default-accordion">
       <app-explaboral-acc
@@ -67,6 +67,9 @@
           'Capacidad para gestionar y controlar la disponibilidad de inmuebles mediante fechas u otras acciones, garantizando una administración eficiente de los recursos y una experiencia óptima para el usuario final.'
         "
       ></app-explaboral-acc>
+
+      <div class="border-t border-gray-300"></div>
+
       <app-explaboral-acc
         [logo]="'https://www.tecnoaccesos.com/images/index/CD.jpg'"
         [title]="'(Prácticas) Desarrollador Web Full Stack'"
@@ -80,6 +83,9 @@
           'Desarrollo de una plataforma web para la gestión de visitas de clientes y usuarios, incluyendo control de accesos y registro de entradas, salidas y otras acciones. Así como registro de códigos QR teniendo el control y la gestión de los accesos en los distintos terminales.'
         "
       ></app-explaboral-acc>
+
+      <div class="border-t border-gray-300"></div>
+
       <app-explaboral-acc
         [logo]="
           'https://media.licdn.com/dms/image/v2/C4D0BAQGJrRviB06sGQ/company-logo_100_100/company-logo_100_100/0/1674471018808/motiva_consulting_s_l__logo?e=1736985600&v=beta&t=4Y1h_ZMcM6BHyYa2mPGlFURsEg0chlWT0d4AFaTWCRY'
@@ -96,11 +102,14 @@
         "
         [desc3]="''"
       ></app-explaboral-acc>
+
+      <div class="border-t border-gray-300"></div>
+
     </div>
   </div>
 
   <!--CONTENEDOR ESTUDIOS-->
-  <div class="h-auto px-14">
+  <div class="h-auto">
     <h2 class="text-4xl font-bold py-10">Estudios</h2>
     <ul role="list" class="">
       <app-estudios-list
@@ -112,6 +121,7 @@
         [date]="'Sep 2023 - Jun 2024'"
         [type]="'Ciclo Formativo Grado Superior'"
       ></app-estudios-list>
+
       <div class="border-t border-gray-300"></div>
 
       <app-estudios-list
@@ -176,7 +186,7 @@
   
 
   <!--CONTENEDOR SKILLS-->
-  <div class="h-auto px-14 text-center items-start justify-center">
+  <div class="h-auto text-center items-start justify-center">
     <h2 class="text-4xl font-bold tracking-wide py-10">Skills</h2>
     <div class="p-3 h-auto w-auto flex-row">
       <app-skills-button
@@ -290,14 +300,14 @@
   </div>
 
   <!--CONTENEDOR CERTIFICADOS-->
-  <div class="h-auto px-14 text-center items-start justify-center">
+  <div class="h-auto text-center items-start justify-center">
     <h2 class="text-4xl font-bold tracking-wide py-10">
       Mis proyectos más relevantes
     </h2>
   </div>
 
   <!--CONTENEDOR RECURSOS-->
-  <div class="h-auto w-full px-14 text-center items-start justify-center">
+  <div class="h-auto w-full text-center items-start justify-center">
     <h2 class="text-4xl font-bold tracking-wide py-10">Contáctame</h2>
     <p class="text-xl tracking-wide mx-5 text-slate-600">
       ¿Quieres hablar o contactar conmigo? Me puedes escribir a mi correo
