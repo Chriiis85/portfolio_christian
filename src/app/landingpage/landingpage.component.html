@@ -1,4 +1,4 @@
-<app-navbar></app-navbar>
+<!--<app-navbar></app-navbar>-->
 <section class="w-[80vw] p-5 py-20 mx-auto">
   <!--CONTENEDOR PRINCIPAL-->
   <div
@@ -22,7 +22,7 @@
     </div>
   </div>
   <!--CONTENEDOR ABOUT-->
-  <div class="h-auto px-14 py-10">
+  <div class="h-auto px-14 py-5">
     <h2 class="text-4xl font-bold">Sobre Mí</h2>
     <p class="text-xl py-5 text-slate-600 text-justify">
       Desarrollador Web con un sólido historial de aprendizaje y una fuerte
@@ -44,39 +44,87 @@
 
   <!--CONTENEDOR EXPERIENCIA LABORAL-->
   <div class="h-auto px-14 py-3">
-    <h2 class="text-4xl font-bold">Experiencia Laboral</h2>
+    <h2 class="text-4xl font-bold py-10">Experiencia Laboral</h2>
+    <div class="accordion-group" data-accordion="default-accordion">
+      <app-explaboral-acc
+        [logo]="'https://www.ibernetcloud.es/imagenes/logo.jpg'"
+        [title]="'(Prácticas) Desarrollador Web Full Stack'"
+        [area]="'IberNetCloud - Rentdays'"
+        [date]="'Mar 2024 - Jun 2024'"
+        [location]="'Madrid, Comunidad de Madrid, España'"
+        [desc1]="
+          'Diseño, maquetación y creación de un portal web inmobiliario similar a Airbnb, Booking, Trivago, entre otros.'
+        "
+        [desc2]="
+          'Experiencia en la gestión de reservas, control de usuarios, registro de inmuebles para ventas y otras funcionalidades. Habilidad en el diseño responsive, asegurando una interfaz accesible y usable para todos los usuarios.'
+        "
+        [desc3]="
+          'Capacidad para gestionar y controlar la disponibilidad de inmuebles mediante fechas u otras acciones, garantizando una administración eficiente de los recursos y una experiencia óptima para el usuario final.'
+        "
+      ></app-explaboral-acc>
+      <app-explaboral-acc
+        [logo]="'https://www.tecnoaccesos.com/images/index/CD.jpg'"
+        [title]="'(Prácticas) Desarrollador Web Full Stack'"
+        [area]="'TEDITEL S.L - Tecnoaccesos'"
+        [date]="'Mar 2023 - Jun 2023'"
+        [location]="'Vallecas, Comunidad de Madrid, España'"
+        [desc1]="'Desarrollo y diseño de sitio web responsive, usable y accesible desde distintos dispositivos y funcionales en todos ellos. Sitio web que genera visitas para controlar el acceso a empresas, edificios, etc.'"
+        [desc2]="'Desarrollo de una plataforma web para la gestión de visitas de clientes y usuarios, incluyendo control de accesos y registro de entradas, salidas y otras acciones. Así como registro de códigos QR teniendo el control y la gestión de los accesos en los distintos terminales.'"
+      ></app-explaboral-acc>
+      <app-explaboral-acc
+        [logo]="
+          'https://media.licdn.com/dms/image/v2/C4D0BAQGJrRviB06sGQ/company-logo_100_100/company-logo_100_100/0/1674471018808/motiva_consulting_s_l__logo?e=1736985600&v=beta&t=4Y1h_ZMcM6BHyYa2mPGlFURsEg0chlWT0d4AFaTWCRY'
+        "
+        [title]="'(Prácticas) Mantenimiento Sistemas Informáticos y Redes'"
+        [area]="'Motiva Consulting, S.L'"
+        [date]="'Mar 2021 - Jun 2021'"
+        [location]="'Madrid, Comunidad de Madrid, España'"
+        [desc1]="
+          'Instalación y configuración de sistemas operativos y software. Mantenimiento, montaje y reparación de equipos y sistemas informáticos, garantizando la verificación y comprobación de su correcto funcionamiento.'
+        "
+        [desc2]="
+          'Soporte técnico a usuarios, solucionando incidencias y realizando mantenimiento preventivo para asegurar el óptimo rendimiento de los sistemas.'
+        "
+        [desc3]="''"
+      ></app-explaboral-acc>
+    </div>
   </div>
 
   <!--CONTENEDOR ESTUDIOS-->
   <div class="h-auto px-14 py-3">
-    <h2 class="text-4xl font-bold">Estudios</h2>
-    <ul role="list">
+    <h2 class="text-4xl font-bold py-10">Estudios</h2>
+    <ul role="list" class="">
       <app-estudios-list
-      [logo]="'https://pbs.twimg.com/profile_images/1101916549009547264/8WvjMwp8_400x400.png'"
-      [title]="'Desarrollo de Aplicaciones Web'"
-      [center]="'I.E.S Puig Adam'"
-      [date]="'Sep 2023 - Jun 2024'"
-      [type]="'Ciclo Formativo Grado Superior'"
+        [logo]="
+          'https://pbs.twimg.com/profile_images/1101916549009547264/8WvjMwp8_400x400.png'
+        "
+        [title]="'Desarrollo de Aplicaciones Web'"
+        [center]="'I.E.S Puig Adam'"
+        [date]="'Sep 2023 - Jun 2024'"
+        [type]="'Ciclo Formativo Grado Superior'"
       ></app-estudios-list>
       <div class="border-t border-gray-300"></div>
 
       <app-estudios-list
-      [logo]="'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0lyU1mzOzfyC7BdOupW3o4tJAjEjIWCDvjw&s'"
-      [title]="'Desarrollo de Aplicaciones Multiplataforma'"
-      [center]="'Colegio La Inmaculada-Padres Escolapios'"
-      [date]="'Sep 2021 - Jun 2023'"
-      [type]="'Ciclo Formativo Grado Superior'"
+        [logo]="
+          'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0lyU1mzOzfyC7BdOupW3o4tJAjEjIWCDvjw&s'
+        "
+        [title]="'Desarrollo de Aplicaciones Multiplataforma'"
+        [center]="'Colegio La Inmaculada-Padres Escolapios'"
+        [date]="'Sep 2021 - Jun 2023'"
+        [type]="'Ciclo Formativo Grado Superior'"
       ></app-estudios-list>
 
       <div class="border-t border-gray-300"></div>
       <app-estudios-list
-      [logo]="'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_Xps2RwJdtzWhhMGbcYCKR0x80EA5iIYmzQ&s'"
-      [title]="'Sistemas Microinformáticos y Redes'"
-      [center]="'I.E.S Laguna de Joatzel'"
-      [date]="'Sep 2019 - Jun 2021'"
-      [type]="'Ciclo Formativo Grado Medio'"
+        [logo]="
+          'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_Xps2RwJdtzWhhMGbcYCKR0x80EA5iIYmzQ&s'
+        "
+        [title]="'Sistemas Microinformáticos y Redes'"
+        [center]="'I.E.S Laguna de Joatzel'"
+        [date]="'Sep 2019 - Jun 2021'"
+        [type]="'Ciclo Formativo Grado Medio'"
       ></app-estudios-list>
-
     </ul>
   </div>
 
@@ -87,16 +135,24 @@
     </h2>
     <div class="flex flex-row items-center justify-around">
       <app-certificado-card
-      [img]="'https://udemy-certificate.s3.amazonaws.com/image/UC-c2f88cef-7d7f-4a92-801c-b15869b064ec.jpg?v=1725830728000'"
-      [title]="'Universidad Angular - De Cero a Experto - Angular 18'"
-      [desc]="'Descripcion de prueba'"
-      [url]="'https://www.udemy.com/certificate/UC-c2f88cef-7d7f-4a92-801c-b15869b064ec/'"
+        [img]="
+          'https://udemy-certificate.s3.amazonaws.com/image/UC-c2f88cef-7d7f-4a92-801c-b15869b064ec.jpg?v=1725830728000'
+        "
+        [title]="'Universidad Angular - De Cero a Experto - Angular 18'"
+        [desc]="'Descripcion de prueba'"
+        [url]="
+          'https://www.udemy.com/certificate/UC-c2f88cef-7d7f-4a92-801c-b15869b064ec/'
+        "
       ></app-certificado-card>
       <app-certificado-card
-      [img]="'https://udemy-certificate.s3.amazonaws.com/image/UC-497035ed-855d-47fd-b05b-0bbcab3fa7cd.jpg?v=1724787789000'"
-      [title]="'Git, GitHub & Markdown Crash Course: Learn Git, GitHub & MD'"
-      [desc]="'Descripcion de prueba'"
-      [url]="'https://www.udemy.com/certificate/UC-497035ed-855d-47fd-b05b-0bbcab3fa7cd/?utm_campaign=email&utm_medium=email&utm_source=sendgrid.com'"
+        [img]="
+          'https://udemy-certificate.s3.amazonaws.com/image/UC-497035ed-855d-47fd-b05b-0bbcab3fa7cd.jpg?v=1724787789000'
+        "
+        [title]="'Git, GitHub & Markdown Crash Course: Learn Git, GitHub & MD'"
+        [desc]="'Descripcion de prueba'"
+        [url]="
+          'https://www.udemy.com/certificate/UC-497035ed-855d-47fd-b05b-0bbcab3fa7cd/?utm_campaign=email&utm_medium=email&utm_source=sendgrid.com'
+        "
       ></app-certificado-card>
     </div>
   </div>
@@ -109,6 +165,18 @@
         [icon]="'fa-brands fa-angular'"
         [name]="'Angular'"
         [color]="'rgb(224, 62, 49)'"
+      ></app-skills-button>
+
+      <app-skills-button
+        [icon]="'fa-brands fa-react'"
+        [name]="'React'"
+        [color]="'rgb(0, 122, 255)'"
+      ></app-skills-button>
+
+      <app-skills-button
+        [icon]="'fa-brands fa-wordpress'"
+        [name]="'Wordpress'"
+        [color]="'rgb(33, 117, 155)'"
       ></app-skills-button>
 
       <app-skills-button
@@ -236,4 +304,3 @@
     </p>
   </div>
 </section>
-
