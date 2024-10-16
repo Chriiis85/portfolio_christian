@@ -1,30 +1,35 @@
 <!--<app-navbar></app-navbar>-->
-<section class="w-[80vw] p-5 py-20 mx-auto">
-  <!--CONTENEDOR PRINCIPAL-->
+<section class="w-[100vw] md:w-[80vw] lg:w-[70vw] xl:w-[60vw] p-2 mx-auto">
+  <!-- CONTENEDOR PRINCIPAL -->
   <div
-    class="p-5 flex flex-row items-center justify-center h-[25vh] text-start"
+    class="p-5 flex flex-col md:flex-row items-center justify-center h-auto md:h-[25vh] text-start"
   >
-    <div class="w-[80vw] h-auto p-10 flex flex-col items-start">
-      <h1 class="py-5 text-5xl font-bold capitalize tracking-wide">
+    <div
+      class="w-full md:w-[80vw] h-auto p-5 md:p-10 flex flex-col items-start"
+    >
+      <h1 class="py-5 text-3xl md:text-5xl font-bold capitalize tracking-wide">
         Hola, soy Christian.
       </h1>
-      <p class="text-xl font-semibold text-start">
+      <p class="text-base md:text-xl font-semibold text-start">
         Técnico Superior en Desarrollo de Aplicaciones Web y Multiplataforma.
         Desarrollador, Maquetador y Diseñador Web y de Aplicaciones.
       </p>
     </div>
-    <div class="w-[30vw] h-auto flex items-start justify-center">
+    <div
+      class="w-[50vw] md:w-[30vw] h-auto flex items-center justify-center mt-5 md:mt-0"
+    >
       <img
-        class="rounded-full border-2 border-black shadow-2xl size-44"
+        class="rounded-full border-2 border-black shadow-2xl w-32 md:w-44"
         src="https://media.licdn.com/dms/image/v2/D4D35AQGiLTYqYOQZKQ/profile-framedphoto-shrink_200_200/profile-framedphoto-shrink_200_200/0/1719444422572?e=1729512000&v=beta&t=6edYZZcuFVNbtIoLDDf5REl46cbufABWNaZ-OseUjzs"
         alt="Foto de Christian"
       />
     </div>
   </div>
-  <!--CONTENEDOR ABOUT-->
-  <div class="h-auto px-14 py-5">
-    <h2 class="text-4xl font-bold">Sobre Mí</h2>
-    <p class="text-xl py-5 text-slate-600 text-justify">
+
+  <!-- CONTENEDOR ABOUT -->
+  <div class="h-auto px-5 md:px-14 py-5">
+    <h2 class="text-3xl md:text-4xl font-bold">Sobre Mí</h2>
+    <p class="text-base md:text-xl py-5 text-slate-600 text-justify">
       Desarrollador Web con un sólido historial de aprendizaje y una fuerte
       ambición de adquirir nuevos conocimientos en el sector del desarrollo y
       maquetación de páginas web. Experiencia en el diseño, desarrollo y
@@ -68,8 +73,12 @@
         [area]="'TEDITEL S.L - Tecnoaccesos'"
         [date]="'Mar 2023 - Jun 2023'"
         [location]="'Vallecas, Comunidad de Madrid, España'"
-        [desc1]="'Desarrollo y diseño de sitio web responsive, usable y accesible desde distintos dispositivos y funcionales en todos ellos. Sitio web que genera visitas para controlar el acceso a empresas, edificios, etc.'"
-        [desc2]="'Desarrollo de una plataforma web para la gestión de visitas de clientes y usuarios, incluyendo control de accesos y registro de entradas, salidas y otras acciones. Así como registro de códigos QR teniendo el control y la gestión de los accesos en los distintos terminales.'"
+        [desc1]="
+          'Desarrollo y diseño de sitio web responsive, usable y accesible desde distintos dispositivos y funcionales en todos ellos. Sitio web que genera visitas para controlar el acceso a empresas, edificios, etc.'
+        "
+        [desc2]="
+          'Desarrollo de una plataforma web para la gestión de visitas de clientes y usuarios, incluyendo control de accesos y registro de entradas, salidas y otras acciones. Así como registro de códigos QR teniendo el control y la gestión de los accesos en los distintos terminales.'
+        "
       ></app-explaboral-acc>
       <app-explaboral-acc
         [logo]="
@@ -125,37 +134,46 @@
         [date]="'Sep 2019 - Jun 2021'"
         [type]="'Ciclo Formativo Grado Medio'"
       ></app-estudios-list>
+      <div class="border-t border-gray-300"></div>
     </ul>
   </div>
 
   <!--CONTENEDOR CERTIFICADOS-->
-  <div class="h-auto px-14 py-3">
-    <h2 class="text-4xl font-bold py-10 text-center items-start justify-center">
+  <div class="h-auto px-5 md:px-14 py-3">
+    <h2 class="text-3xl md:text-4xl font-bold py-5 md:py-10 text-center">
       Certificados
     </h2>
-    <div class="flex flex-row items-center justify-around">
+    
+    <!-- Contenedor de tarjetas -->
+    <div
+      class="flex flex-col sm:flex-row items-center sm:items-start justify-around gap-8 flex-wrap"
+    >
+      <!-- Primera tarjeta -->
       <app-certificado-card
         [img]="
           'https://udemy-certificate.s3.amazonaws.com/image/UC-c2f88cef-7d7f-4a92-801c-b15869b064ec.jpg?v=1725830728000'
         "
         [title]="'Universidad Angular - De Cero a Experto - Angular 18'"
-        [desc]="'Descripcion de prueba'"
+        [desc]="'Descripción de prueba'"
         [url]="
           'https://www.udemy.com/certificate/UC-c2f88cef-7d7f-4a92-801c-b15869b064ec/'
         "
       ></app-certificado-card>
+  
+      <!-- Segunda tarjeta -->
       <app-certificado-card
         [img]="
           'https://udemy-certificate.s3.amazonaws.com/image/UC-497035ed-855d-47fd-b05b-0bbcab3fa7cd.jpg?v=1724787789000'
         "
         [title]="'Git, GitHub & Markdown Crash Course: Learn Git, GitHub & MD'"
-        [desc]="'Descripcion de prueba'"
+        [desc]="'Descripción de prueba'"
         [url]="
           'https://www.udemy.com/certificate/UC-497035ed-855d-47fd-b05b-0bbcab3fa7cd/?utm_campaign=email&utm_medium=email&utm_source=sendgrid.com'
         "
       ></app-certificado-card>
     </div>
   </div>
+  
 
   <!--CONTENEDOR SKILLS-->
   <div class="h-auto px-14 py-3 text-center items-start justify-center">

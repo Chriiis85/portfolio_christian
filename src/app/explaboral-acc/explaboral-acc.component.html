@@ -1,25 +1,23 @@
 <div
-  class="accordion py-4 border-b border-solid"
+  class="accordion py-4 border-b border-solid hover:bg-gray-100 cursor-pointer"
   id="basic-heading-three-with-arrow-always-open"
 >
   <button
-    class="accordion-toggle flex-row leading-8 text-gray-600 w-full transition duration-500 hover:text-indigo-600 accordion-active:text-indigo-600"
+    class="accordion-toggle flex flex-row items-center justify-between leading-8 text-gray-600 w-full transition duration-500 hover:text-indigo-600 accordion-active:text-indigo-600"
     aria-controls="basic-collapse-three-with-arrow-always-open"
   >
-    <div class="w-100 flex flex-row items-center justify-between gap-x-96">
-      <div class="flex min-w-0 gap-x-4">
+    <div class="w-full flex flex-row items-center justify-between gap-x-4 px-4 sm:px-6 md:gap-x-8">
+      <div class="flex items-center min-w-0 gap-x-4">
         <img
           class="h-12 w-12 flex-none rounded-full bg-gray-50"
           src="{{ logo }}"
           alt=""
         />
-        <div class="min-w-0 flex-auto text-start sm:items-start">
-          <p class="text-s flex flex-row font-semibold leading-6 text-gray-900">
-            {{ title
-            }}<svg
-              class="text-gray-900 ml-5 transition duration-500 group-hover:text-indigo-600 accordion-active:text-indigo-600 accordion-active:rotate-180"
-              width="22"
-              height="22"
+        <div class="min-w-0 flex-auto text-start">
+          <p class="text-lg sm:text-base flex items-center font-semibold leading-6 text-gray-900">
+            {{ title }}
+            <svg
+              class="ml-2 w-5 h-5 transition duration-500 group-hover:text-indigo-600 accordion-active:text-indigo-600 accordion-active:rotate-180"
               viewBox="0 0 22 22"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
@@ -30,36 +28,37 @@
                 stroke-width="1.6"
                 stroke-linecap="round"
                 stroke-linejoin="round"
-              ></path>
+              />
             </svg>
           </p>
-          <p class="mt-1 text-sm leading-5 text-gray-500">
+          <p class="mt-1 text-xs sm:text-sm leading-5 text-gray-500">
             {{ area }}
           </p>
         </div>
       </div>
-      <div class="hidden shrink-0 sm:flex sm:flex-col sm:items-end">
-        <p class="text-s leading-6 text-gray-900">
+      <div class="hidden sm:flex sm:flex-col sm:items-end">
+        <p class="text-sm sm:text-base leading-6 text-gray-900">
           {{ date }}
         </p>
-        <p class="text-sm leading-6 text-gray-500">
+        <p class="text-xs sm:text-sm leading-6 text-gray-500">
           {{ location }}
         </p>
       </div>
     </div>
   </button>
+
   <div
     id="basic-collapse-three-with-arrow-always-open"
-    class="accordion-content w-full mt-3 px-16 pr-60 overflow-hidden text-justify"
+    class="accordion-content w-full mt-3 sm:px-8 overflow-hidden text-justify"
     aria-labelledby="basic-heading-three-with-arrow-always-open"
   >
-    <p class="text-sm text-gray-500 leading-6">
+    <p class="text-sm px-14 text-gray-500 ">
       {{ desc1 }}
     </p>
-    <p class="text-sm text-gray-500 leading-6">
+    <p class="text-sm px-14 text-gray-500 leading-6">
       {{ desc2 }}
     </p>
-    <p class="text-sm text-gray-500 leading-6">
+    <p class="text-sm px-14 text-gray-500 leading-6">
       {{ desc3 }}
     </p>
   </div>
